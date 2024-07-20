@@ -7,7 +7,7 @@ public class TestClass  extends TestBase{
 	AdminView testObj=null;
 
 	@Test(priority=1)
-	public void AdminTest() {
+	public void AdminTest() { // FROM LOGIN TO MENTOR TOPIC UPDATE AND SUBMIT
 		
 		testObj=new AdminView(driver);
 		testObj.clickloginButton();
@@ -44,7 +44,7 @@ public class TestClass  extends TestBase{
 		testObj.clickLogout();
 }
 	@Test(priority=3)
-	public void ProjectTest() {
+	public void ProjectTest() { //For adding project
 	
 		testObj=new AdminView(driver);
 		testObj.clickloginButton();

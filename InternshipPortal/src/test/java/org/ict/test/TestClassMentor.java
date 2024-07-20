@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class TestClassMentor extends TestBase{
 	ViewMentor testObj=null;
 	@Test(priority=1)
-	public void StudentSubmission() {
+	public void StudentSubmission() {  // Student submission page
 		testObj=new ViewMentor(driver);
 		testObj.clickSubmission();
 		testObj.setAddname("Amazon Project");
@@ -20,7 +20,7 @@ public class TestClassMentor extends TestBase{
 		
 	}
   @Test(priority=2)
-	public void MentorView() {
+	public void MentorView() {  // evaluating projects and updating
 		testObj=new ViewMentor(driver);
 		testObj.clickloginButton();
 		testObj.setEmail("adon@gmail.com");
@@ -48,7 +48,7 @@ public class TestClassMentor extends TestBase{
 		testObj.setdeleteAlert();
 	}
 	@Test(priority=4)
-	public void referenceMaterial() {
+	public void referenceMaterial() {  // ADDING REFERENCE MATERIAL
 		testObj=new ViewMentor(driver);
 		testObj.clickloginButton();
 		testObj.setEmail("adon@gmail.com");

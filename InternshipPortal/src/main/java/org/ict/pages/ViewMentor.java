@@ -16,7 +16,8 @@ public class ViewMentor {
 			this.driver=driver;
 			this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		}
-		// STUDENT SUBMISSION
+		// STUDENT SUBMISSION  PAGE
+		
 		public void clickSubmission() {
 			WebElement submission=driver.findElement(By.xpath("//a[normalize-space()='Student Submissions']"));
 			submission.click();
@@ -52,7 +53,8 @@ public class ViewMentor {
 	        driver.switchTo().alert().accept();
 	    }
 		
-		//EDIT,EVALUATE AND UPDATE TOPICS
+		//EDIT,EVALUATE AND UPDATE TOPICS  IN THE MENTOR PAGE
+		
 		public void clickloginButton() {
 			WebElement login=driver.findElement(By.xpath("//a[normalize-space()='Login']"));
 			login.click();
@@ -104,7 +106,9 @@ public class ViewMentor {
 			wait.until(ExpectedConditions.alertIsPresent());
 	        driver.switchTo().alert().accept();
 	    }
+		
 		//DELETE PROJECT TOPIC
+		
 		public void setDelete() {
 			//WebElement delete=driver.findElement(By.xpath("(//button[@type='button'][normalize-space()='DELETE'])[14]"));
 			WebElement delete=driver.findElement(By.xpath("(//button[@type='button'][normalize-space()='DELETE'])[14]"));
@@ -114,7 +118,9 @@ public class ViewMentor {
 			wait.until(ExpectedConditions.alertIsPresent());
 	        driver.switchTo().alert().accept();
 	    }
-		//REFERENCE MATERIAL
+		
+		//ADDING  REFERENCE MATERIAL  AND  UPDATING INFO AND DELETING
+		
 		public void setReference() {
 			WebElement material=driver.findElement(By.xpath("(//a[normalize-space()='Reference Material'])[1]"));
 			 material.click();

@@ -16,7 +16,9 @@ public class AdminView {
 	public AdminView (WebDriver driver) {              
 		this.driver=driver;
 	}
-	//SETTING UP MENTOR INFO
+	
+	//SETTING UP MENTOR INFO    LOGIN AND INFO
+	
 	public void clickloginButton() {
 		WebElement login=driver.findElement(By.xpath("//a[normalize-space()='Login']"));
 		login.click();
@@ -127,7 +129,8 @@ public class AdminView {
 		      
 		            
 }}
-		//DELETING MENTOR INFO
+		//DELETING MENTOR INFO  
+		
 		public void clickMentors() {
 			WebElement mentors=driver.findElement(By.xpath("(//a[contains(text(),'Mentors')])[1]"));
 			mentors.click();
@@ -156,7 +159,7 @@ public class AdminView {
 			WebElement logout=driver.findElement(By.xpath("(//a[normalize-space()='Logout'])[1]"));
 			logout.click();
 		}
-		// ADDING PROJECTS
+		// ADDING PROJECTS, EDIT
 		public void clickProjects() {
 			WebElement projects=driver.findElement(By.xpath("//a[@href='/project']//div[@class='card']//div[@class='card--title']"));
 			projects.click();
@@ -178,6 +181,7 @@ public class AdminView {
 			edit.click();
 		}
 		//DELETE PROJECT TOPIC AND LOGOUT
+		
 		public void clickDeleteproject() {
 			WebElement projectDelete=driver.findElement(By.xpath("//button[contains(text(), \"Delete\")]"));
 			projectDelete.click();
